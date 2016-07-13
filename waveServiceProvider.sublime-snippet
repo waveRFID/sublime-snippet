@@ -1,0 +1,39 @@
+<snippet>
+    <content><![CDATA[
+<?php
+namespace Waverfid\\${1};
+
+class ServiceProvider extends \Waverfid\Common\CommonServiceProvider
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function register()
+    {
+        \$this->registerRoutes();
+    }
+    public function boot()
+    {
+    }
+    public function registerServices()
+    {
+    }
+    public function registerRoutes()
+    {
+        \$this->app->group(['namespace' => 'Waverfid\\${1}\Http\Controller', 'prefix' => '${3}'], function ($app) {
+            require __DIR__ . '/Http/${2}.routes.php';
+
+        });
+    }
+
+    public function provides()
+    {
+        return [];
+    }
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>waveServiceProvider</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

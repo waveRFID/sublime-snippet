@@ -1,0 +1,33 @@
+<snippet>
+    <content>
+{
+    "name": "waveRFID/${1}",
+    "description": "${2}",
+    "license":"proprietary",
+    "version":"dev-development",
+    "authors": [
+        {
+            "name": "Atyantik Technologies",
+            "email": "admin@atyantik.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Waverfid\\${3}\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+        <![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>waveComposer</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

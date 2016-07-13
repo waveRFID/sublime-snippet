@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+<?php
+namespace Waverfid\\${1}\Model;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class ${2} extends Model
+{
+    use SoftDeletes;
+    protected \$fillable = [${3}];
+    protected \$table    = '${4}';
+    protected \$dates    = ['deleted_at'];
+}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>waveModel</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
